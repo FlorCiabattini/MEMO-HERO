@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MEMO</title>
+</head>
+<body>
+    <main>
+        <section class="section3">
+            <button onclick="restart()" id="replay">
+                RESTART
+            </button>
+        </section>
+
+        <div class="modal-container" id="modal_containerWin"> 
+            <div class="modal">
+                <h1 class="final">GANASTE!</h1>     
+                <button onclick="volver()" id="volver">
+                    Volver
+                </button>
+            </div>     
+  
+        </div>
+        <div class="modal-container" id="modal_containerLose"> 
+            <div class="modal">
+                <h1 class="final">PERDISTE</h1>
+                <button onclick="volver()" id="volver">
+                    Volver
+                </button>  
+
+            </div>
+        </div>
+        <section class="section1">
+            <h1></h1>
+            <table>
+                <tr>
+                    <td><button class="buttons" id="0" onclick="destapar(0)"></button></td>
+                    <td><button class="buttons"id="1" onclick="destapar(1)"></button></td>
+                    <td><button class="buttons"id="2" onclick="destapar(2)"></button></td>
+                    <td><button class="buttons"id="3" onclick="destapar(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="buttons"id="4" onclick="destapar(4)"></button></td>
+                    <td><button class="buttons"id="5" onclick="destapar(5)"></button></td>
+                    <td><button class="buttons"id="6" onclick="destapar(6)"></button></td>
+                    <td><button class="buttons"id="7" onclick="destapar(7)"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="buttons"id="8" onclick="destapar(8)"></button></td>
+                    <td><button class="buttons"id="9" onclick="destapar(9)"></button></td>
+                    <td><button class="buttons"id="10" onclick="destapar(10)"></button></td>
+                    <td><button class="buttons"id="11" onclick="destapar(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="buttons"id="12" onclick="destapar(12)"></button></td>
+                    <td><button class="buttons"id="13" onclick="destapar(13)"></button></td>
+                    <td><button class="buttons"id="14" onclick="destapar(14)"></button></td>
+                    <td><button class="buttons"id="15" onclick="destapar(15)"></button></td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="section2">
+            <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+            <h2 id="tRestante" class="estadisticas">Tiempo: 30 </h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+        </section>
+    </main>
+    <footer>
+        <div id="author">
+            <h1>MEMOTEST</h1><span>by</span><a href="https://www.instagram.com/flor_ciabattini/?hl=es" target="_blank"> Flor Ciabattini</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
